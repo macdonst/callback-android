@@ -9,7 +9,7 @@
 if (!PhoneGap.hasResource("compass")) {
 PhoneGap.addResource("compass");
 
-CompassError = function(){
+var CompassError = function(){
     this.code = null;
 };
 
@@ -17,7 +17,7 @@ CompassError = function(){
 CompassError.COMPASS_INTERNAL_ERR = 0;
 CompassError.COMPASS_NOT_SUPPORTED = 20;
 
-CompassHeading = function() {
+var CompassHeading = function() {
     this.magneticHeading = null;
     this.trueHeading = null;
     this.headingAccuracy = null;
