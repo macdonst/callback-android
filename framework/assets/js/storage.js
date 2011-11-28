@@ -327,9 +327,9 @@ var CupcakeLocalStorage = function() {
       this.db = openDatabase('localStorage', '1.0', 'localStorage', 2621440);
       var storage = {};
       this.length = 0;
+      var that = this;
       function setLength (length) {
-        this.length = length;
-        localStorage.length = length;
+        that.length = length;
       }
       this.db.transaction(
         function (transaction) {
