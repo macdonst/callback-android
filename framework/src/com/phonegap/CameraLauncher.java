@@ -160,6 +160,7 @@ public class CameraLauncher extends Plugin {
                 
         // Display camera
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         
         // Specify file so that large image is captured and returned
         // TODO: What if there isn't any external storage?
